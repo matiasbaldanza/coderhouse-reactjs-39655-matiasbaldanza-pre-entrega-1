@@ -1,12 +1,15 @@
 import { useState } from 'react'
 import './App.css'
+import NavBar from './components/NavBar/NavBar'
+import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 
-function App() {
+function App () {
   const [count, setCount] = useState(0)
 
   return (
-    <div>
-      <h1>Hola, Mundo! 👋</h1>
+    <div className='container m-auto max-w-7xl'>
+      <NavBar />
+      <ItemListContainer greeting='Bienvenidos! 👋' />
     </div>
   )
 }

@@ -5,4 +5,8 @@
 - Profesor: Francisco Pugh
 - Alumno: Matias Baldanza
 
-##
+## Notas
+
+- Librería de componentes: DaisyUI (TailwindCSS 3.3)
+- Build tool: Vite
+- Linter: StandardJS (ESLint)

@@ -3,6 +3,21 @@ import CartBadge from '../CartBadge/CartBadge'
 import CategoriesMenu from '../CategoriesMenu/CategoriesMenu'
 
 function NavBar () {
+  const topMenu = [
+    {
+      title: 'Celulares',
+      route: '/celulares'
+    },
+    {
+      title: 'Accesorios',
+      route: '/accesorios'
+    },
+    {
+      title: 'Computadoras',
+      route: '/computadoras'
+    }
+  ]
+
   return (
     <div className='navbar bg-base-100'>
 
@@ -12,7 +27,9 @@ function NavBar () {
       </div>
 
       {/* Menu */}
-      <div className='flex-1 justify-end'>
+      <div className='flex-1 justify-between'>
+        <div />
+        <CategoriesMenu menuItems={topMenu} />
         <CartBadge />
       </div>
     </div>

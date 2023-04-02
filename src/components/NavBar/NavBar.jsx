@@ -13,7 +13,7 @@ function NavBar () {
 
       {/* Menu */}
       <div className='flex-1 justify-end'>
-        <span>El menú va aquí</span>
+        <CartBadge />
       </div>
     </div>
   )
